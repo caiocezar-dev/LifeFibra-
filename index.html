@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LifeFibra+ - Internet de qualidade para sua casa e empresa.">
+  <title>LifeFibra+ - Internet de Qualidade</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>LifeFibra+</h1>
+      </div>
+
+      <div class="contact-info">
+        <a href="https://wa.me/5599999999999" target="_blank">
+          <img src="./img/whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+          <span>(81)2011-5527</span>
+        </a>
+      </div>
+
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="assinante-button">
+        <a href="https://central.seusite.com" target="_blank" class="btn-assinante">Central do Assinante</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Slider Section -->
+  <section id="home" class="banner">
+    <div class="slide fade">
+      <img src="./img/banner1.png" alt="Banner 1">
+      <div class="text-overlay">
+        <h2>Conectando você ao futuro</h2>
+        <p>Internet de alta performance para sua casa ou empresa</p>
+        <a href="#planos" class="btn">Ver Planos</a>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="./img/banner2.png" alt="Banner 2">
+      <div class="text-overlay">
+        <h2>Velocidade e estabilidade</h2>
+        <p>Seu mundo online sem limites</p>
+        <a href="#planos" class="btn">Ver Planos</a>
+      </div>
+    </div>
+    <div class="slide fade">
+      <img src="./img/banner3.png" alt="Banner 3">
+      <div class="text-overlay">
+        <h2>Conexão de qualidade</h2>
+        <p>Transforme sua experiência digital</p>
+        <a href="#planos" class="btn">Ver Planos</a>
+      </div>
+    </div>
+
+    <div class="prev">&#10094;</div>
+    <div class="next">&#10095;</div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Quem Somos</h2>
+      <p>A LifeFibra+ é especializada em fornecer a melhor internet banda larga residencial e empresarial com suporte humanizado e qualidade garantida.</p>
+    </div>
+  </section>
+
+  <!-- Planos - Slide Section -->
+  <section id="planos" class="planos">
+    <div class="container">
+      <h2>Nossos Planos</h2>
+      <div class="planos-slider">
+        <div class="plano-slide active">
+          <div class="plano">
+            <h3>Plano Básico</h3>
+            <p>200Mbps de velocidade</p>
+            <p>R$ 99,90/mês</p>
+          </div>
+        </div>
+        <div class="plano-slide">
+          <div class="plano">
+            <h3>Plano Premium</h3>
+            <p>600Mbps de velocidade</p>
+            <p>R$ 199,90/mês</p>
+          </div>
+        </div>
+        <div class="plano-slide">
+          <div class="plano">
+            <h3>Plano Corporativo</h3>
+            <p>1Gbps de velocidade</p>
+            <p>R$ 349,90/mês</p>
+          </div>
+        </div>
+
+        <div class="prev">&#10094;</div>
+        <div class="next">&#10095;</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dúvidas Frequentes -->
+  <section id="duvidas" class="duvidas">
+    <div class="container duvidas-container">
+      <div class="duvidas-texto">
+        <h2>Dúvidas Frequentes</h2>
+        <div class="faq-item">
+          <button class="faq-question">Qual a velocidade real que receberei?</button>
+          <div class="faq-answer">Você receberá uma conexão próxima ao contratado, conforme regulamentação da Anatel.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">O que acontece se minha internet cair?</button>
+          <div class="faq-answer">Nosso suporte técnico está disponível 24h para resolver qualquer problema.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Posso mudar de plano a qualquer momento?</button>
+          <div class="faq-answer">Sim, basta solicitar o upgrade ou downgrade entrando em contato conosco.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Como funciona o suporte técnico?</button>
+          <div class="faq-answer">Atendimento via WhatsApp, telefone ou visita presencial se necessário.</div>
+        </div>
+      </div>
+      <div class="duvidas-imagem">
+        <img src="./img/duvidas-frequentes.png" alt="Dúvidas Frequentes">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <form action="https://formspree.io/f/{seu-email}" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="message" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LifeFibra+ - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+/* style.css completo para LifeFibra+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #005C88;
+  padding: 15px 0;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: white;
+  height: 3px;
+  margin: 4px 0;
+  width: 25px;
+  border-radius: 4px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.navigation a:hover {
+  color: #00A5C6;
+  border-bottom: 2px solid #00A5C6;
+}
+
+.btn-assinante {
+  background-color: #00A5C6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.banner .slide {
+  display: none;
+  height: 100%;
+}
+
+.banner .slide img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text-overlay h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.text-overlay p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: #00A5C6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.banner .prev, .banner .next,
+.planos-slider .prev, .planos-slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.banner .prev { left: 10px; }
+.banner .next { right: 10px; }
+.planos-slider .prev { left: 10px; }
+.planos-slider .next { right: 10px; }
+
+/* Seções */
+section {
+  padding: 60px 0;
+}
+
+.sobre, .duvidas {
+  background-color: #fff;
+}
+
+.planos, .contato {
+  background-color: #f1f9fd;
+}
+
+/* Planos */
+.planos-slider {
+  position: relative;
+}
+
+.plano-slide {
+  display: none;
+}
+
+.plano-slide.active {
+  display: block;
+}
+
+.plano {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+.plano h3 {
+  color: #005C88;
+  margin-bottom: 10px;
+}
+
+/* FAQ */
+.duvidas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #005C88;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #007393;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background-color: #e8f4f8;
+  border-radius: 8px;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.duvidas-imagem img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Contato */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #00A5C6;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #005C88;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+  }
+
+  .navigation.active {
+    display: block;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .duvidas-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
